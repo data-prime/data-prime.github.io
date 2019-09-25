@@ -1,135 +1,170 @@
-
 <!DOCTYPE html>
-<html lang="ru-RU" prefix="og: http://ogp.me/ns#">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Data Prime</title>
 
-	<title>Data Prime Consulting</title>
+	<meta name="theme-color" content="#222222" />
 
 	<meta property="fb:app_id" content="1649180288476864"/>
 	<meta property="og:title" content="Data Prime Consulting"/>
-	<meta property="og:image" content="http://data-prime.ru/cover.png"/>
+	<meta property="og:image" content="https://data-prime.ru/cover.png"/>
 	<meta property="og:description" content="Software development and it-consulting"/>
-	<meta property="og:url" content="http://data-prime.ru/"/>
+	<meta property="og:url" content="https://data-prime.ru/"/>
 	<meta property="og:type" content="website"/>
-	<style>
-		html,body {background: #031831;}
-		.bg { height: 100%; width: 100%; position: absolute; }
-		.bg .row { background: url(./t.png) 50% repeat-x; background-size: 50%; height: 10%; width: 100%; transition: all .3s ease-out; }
+
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<style type="text/css">
+		html, body { box-sizing: border-box; height: 100%; }
+		body { background: #222; color: #fff; font-family: 'IBM Plex Mono', Roboto, Helvetica Neue, sans-serif; line-height: 4ex; padding: 50px 20%; margin: 0; font-size: 14px; display: flex; flex-direction: column; }
+
+		/* COMMON ELEMENTS */
+		a { background: #fff; color: #000; text-decoration: none; padding: 3px 8px; border-radius: 2px; line-height: 5ex;  }
+			a:hover { background: rgba(255, 255, 255, .8); }
+
+		/* PAGE STRUCTURE */
+		header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex: 0 0 auto; padding: 0 40px; }
+
+		main { flex: 1 0 auto; }
+
+		section { box-sizing: border-box; padding: 40px; margin-bottom: 10px; border-radius: 3px; background: rgba(255, 255, 255, .05); }
+			section.col2 { columns: 2; }
+
+		footer { display: flex; justify-content: space-between; align-items: center; padding: 30px 40px; flex: 0 0 auto; }
+			footer p { white-space: nowrap; }
+			footer ul { list-style: none; padding: 0; margin: 0; text-align: right; }
+				footer ul li { display: inline-block; }
+
+		/* THEMES */
+		@media (prefers-color-scheme: light) {
+			body { background-color: #fff; color: #000; }
+			section { background: rgba(0, 0, 0, .05); }
+			a { background: #000; color: #fff; }
+				a:hover { background: rgba(0, 0, 0, .8); }
+			.logo .text { fill: #000; }
+		}
+
+		@media (prefers-color-scheme: dark) {
+			body { background-color: #000; color: #fff; }
+			section { background: rgba(255, 255, 255, .05); }
+			a { background: #fff; color: #000; }
+				a:hover { background: rgba(255, 255, 255, .8); }
+			.logo .text { fill: #fff; }
+		}
+
+		/* RESPONSIVE */
+		@media (max-width: 800px) {
+			body { padding: 7% 10%; }
+		}
+
+		@media (max-width: 650px) {
+			header { padding: 20px; }
+			body { padding: 5% 3%; }
+			section { padding: 20px; }
+			footer { display: block; padding: 20px; }
+				footer ul { text-align: left; }
+		}
 	</style>
 </head>
 <body>
 
-<div class="bg"><div class="row"></div><div class="row"></div><div class="row"></div><div class="row"></div><div class="row"></div><div class="row"></div><div class="row"></div><div class="row"></div><div class="row"></div><div class="row"></div></div>
-
-	<svg style="position: absolute; top: 50%; left: 50%; margin-top: -97px; margin-left: -100px; " width="200px" height="193px" viewBox="0 0 2374 2286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<defs>
-			<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
-				<stop stop-color="#11F8FF" offset="0%"></stop>
-				<stop stop-color="#0D80F4" offset="100%"></stop>
-			</linearGradient>
-			<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
-				<stop stop-color="#98ED00" offset="0%"></stop>
-				<stop stop-color="#049909" offset="100%"></stop>
-			</linearGradient>
-		</defs>
-		<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-			<g id="Logo">
-				<g id="Symbol" transform="translate(427.000000, 0.000000)">
-					<path d="M205,1525.32321 L205,608 L205,553 L708,553 C865.953438,553 994,681.046562 994,839 C994,996.953438 865.953438,1125 708,1125 L595,1125 L540,1125 L540,750 L427,750 L427,1254 L708,1254 L708,1255 C937.750456,1255 1124,1068.75046 1124,839 C1124,609.249544 937.750456,423 708,423 L92,423 L92,1524.8556 C114.421317,1535.10778 130,1557.73459 130,1584 C130,1619.89851 100.898509,1649 65,1649 C29.1014913,1649 0,1619.89851 0,1584 C0,1558.12687 15.1168127,1535.78447 36.9999961,1525.32323 L37,423 L37,368 L708,368 C968.126117,368 1179,578.873883 1179,839 C1179,1099.12612 968.126117,1310 708,1310 L708,1309 L427,1309 L427,1310 L372,1310 L372,695 L427,695 L593,695 L595,695 L595,1070 L708,1070 C835.577777,1070 939,966.577777 939,839 C939,711.422223 835.577777,608 708,608 L260,608 L260,1524.8556 C282.421317,1535.10778 298,1557.73459 298,1584 C298,1619.89851 268.898509,1649 233,1649 C197.101491,1649 168,1619.89851 168,1584 C168,1558.12687 183.116813,1535.78447 204.999996,1525.32323 Z M65,1634 C92.6142375,1634 115,1611.61424 115,1584 C115,1556.38576 92.6142375,1534 65,1534 C37.3857625,1534 15,1556.38576 15,1584 C15,1611.61424 37.3857625,1634 65,1634 Z M233,1634 C260.614237,1634 283,1611.61424 283,1584 C283,1556.38576 260.614237,1534 233,1534 C205.385763,1534 183,1556.38576 183,1584 C183,1611.61424 205.385763,1634 233,1634 Z" id="P" fill="url(#linearGradient-1)"></path>
-					<path d="M150.67789,278.000008 C139.837634,298.798904 118.077239,313 93,313 C57.1014913,313 28,283.898509 28,248 C28,212.101491 57.1014913,183 93,183 C120.039499,183 143.222769,199.510481 153.018366,222.999999 L708,223 C1048.20741,223 1324,498.792594 1324,839 C1324,1179.20741 1048.20741,1455 708,1455 L427,1455 L427,1585 L708,1585 C1120.00442,1585 1454,1251.00442 1454,839 C1454,426.995577 1120.00442,93 708,93 L151.676793,93 C141.215531,114.883187 118.873126,130 93,130 C57.1014913,130 28,100.898509 28,65 C28,29.1014913 57.1014913,0 93,0 C119.265409,0 141.892221,15.5786833 152.144384,37.9999973 L708,38 C1150.38008,38 1509,396.619915 1509,839 C1509,1281.38008 1150.38008,1640 708,1640 L372,1640 L372,1400 L708,1400 C1017.83174,1400 1269,1148.83174 1269,839 C1269,529.168255 1017.83174,278 708,278 L150.677923,278 Z M93,115 C120.614237,115 143,92.6142375 143,65 C143,37.3857625 120.614237,15 93,15 C65.3857625,15 43,37.3857625 43,65 C43,92.6142375 65.3857625,115 93,115 Z M93,298 C120.614237,298 143,275.614237 143,248 C143,220.385763 120.614237,198 93,198 C65.3857625,198 43,220.385763 43,248 C43,275.614237 65.3857625,298 93,298 Z" id="D" fill="url(#linearGradient-2)"></path>
-				</g>
-				<path d="M246.070312,2146.35156 C246.070312,2174.73712 240.503962,2199.50901 229.371094,2220.66797 C218.238226,2241.82693 202.483175,2258.00515 182.105469,2269.20312 C161.727763,2280.4011 138.388152,2286 112.085938,2286 L0.7578125,2286 L0.7578125,2010.80469 L100.367188,2010.80469 C146.721586,2010.80469 182.593623,2022.49077 207.984375,2045.86328 C233.375127,2069.23579 246.070312,2102.73155 246.070312,2146.35156 Z M188.0625,2146.35156 C188.0625,2116.79412 180.380285,2094.23575 165.015625,2078.67578 C149.650965,2063.11581 127.71108,2055.33594 99.1953125,2055.33594 L58.375,2055.33594 L58.375,2241.46875 L107.203125,2241.46875 C131.942832,2241.46875 151.604094,2232.94019 166.1875,2215.88281 C180.770906,2198.82544 188.0625,2175.64858 188.0625,2146.35156 Z M484.15625,2286 L459.742188,2215.6875 L354.859375,2215.6875 L330.445312,2286 L272.828125,2286 L373.21875,2010.80469 L441.1875,2010.80469 L541.1875,2286 L484.15625,2286 Z M407.203125,2053.1875 L406.03125,2057.48438 C404.72916,2062.1719 403.166676,2067.51039 401.34375,2073.5 C399.520824,2079.48961 388.32302,2112.43199 367.75,2172.32812 L446.851562,2172.32812 L419.703125,2093.22656 L411.304688,2066.66406 L407.203125,2053.1875 Z M673.023438,2055.33594 L673.023438,2286 L615.40625,2286 L615.40625,2055.33594 L526.539062,2055.33594 L526.539062,2010.80469 L762.085938,2010.80469 L762.085938,2055.33594 L673.023438,2055.33594 Z M957.984375,2286 L933.570312,2215.6875 L828.6875,2215.6875 L804.273438,2286 L746.65625,2286 L847.046875,2010.80469 L915.015625,2010.80469 L1015.01562,2286 L957.984375,2286 Z M881.03125,2053.1875 L879.859375,2057.48438 C878.557285,2062.1719 876.994801,2067.51039 875.171875,2073.5 C873.348949,2079.48961 862.151145,2112.43199 841.578125,2172.32812 L920.679687,2172.32812 L893.53125,2093.22656 L885.132812,2066.66406 L881.03125,2053.1875 Z M1374.97656,2097.91406 C1374.97656,2115.62248 1370.94014,2131.44264 1362.86719,2145.375 C1354.79423,2159.30736 1343.23836,2170.08199 1328.19922,2177.69922 C1313.16008,2185.31644 1295.28917,2189.125 1274.58594,2189.125 L1206.22656,2189.125 L1206.22656,2286 L1148.60937,2286 L1148.60937,2010.80469 L1272.24219,2010.80469 C1305.18506,2010.80469 1330.54288,2018.38925 1348.31641,2033.55859 C1366.08993,2048.72794 1374.97656,2070.17955 1374.97656,2097.91406 Z M1316.96875,2098.89062 C1316.96875,2069.98423 1299.91163,2055.53125 1265.79688,2055.53125 L1206.22656,2055.53125 L1206.22656,2144.78906 L1267.35938,2144.78906 C1283.24487,2144.78906 1295.48433,2140.8503 1304.07812,2132.97266 C1312.67192,2125.09501 1316.96875,2113.73445 1316.96875,2098.89062 Z M1604.46875,2286 L1540.60156,2181.50781 L1473.02344,2181.50781 L1473.02344,2286 L1415.40625,2286 L1415.40625,2010.80469 L1552.90625,2010.80469 C1585.71891,2010.80469 1611.04418,2017.86842 1628.88281,2031.99609 C1646.72144,2046.12377 1655.64062,2066.40351 1655.64062,2092.83594 C1655.64062,2112.10687 1650.17193,2128.74082 1639.23437,2142.73828 C1628.29682,2156.73575 1613.51832,2165.94789 1594.89844,2170.375 L1669.3125,2286 L1604.46875,2286 Z M1597.63281,2095.17969 C1597.63281,2068.74726 1580.7059,2055.53125 1546.85156,2055.53125 L1473.02344,2055.53125 L1473.02344,2136.78125 L1548.41406,2136.78125 C1564.55998,2136.78125 1576.79944,2133.13545 1585.13281,2125.84375 C1593.46619,2118.55205 1597.63281,2108.33079 1597.63281,2095.17969 Z M1704.27344,2286 L1704.27344,2010.80469 L1761.89062,2010.80469 L1761.89062,2286 L1704.27344,2286 Z M2043.92188,2286 L2043.92188,2119.20312 C2043.92188,2115.42706 2043.95443,2111.65106 2044.01953,2107.875 C2044.08464,2104.09894 2044.70312,2087.88816 2045.875,2059.24219 C2036.63016,2094.2684 2029.79429,2118.68222 2025.36719,2132.48438 L1975.75781,2286 L1934.74219,2286 L1885.13281,2132.48438 L1864.23438,2059.24219 C1865.79688,2089.45067 1866.57812,2109.43745 1866.57812,2119.20312 L1866.57812,2286 L1815.40625,2286 L1815.40625,2010.80469 L1892.55469,2010.80469 L1941.77344,2164.71094 L1946.07031,2179.55469 L1955.44531,2216.46875 L1967.75,2172.32812 L2018.33594,2010.80469 L2095.09375,2010.80469 L2095.09375,2286 L2043.92188,2286 Z M2148.60938,2286 L2148.60938,2010.80469 L2365.01562,2010.80469 L2365.01562,2055.33594 L2206.22656,2055.33594 L2206.22656,2124.47656 L2353.10156,2124.47656 L2353.10156,2169.00781 L2206.22656,2169.00781 L2206.22656,2241.46875 L2373.02344,2241.46875 L2373.02344,2286 L2148.60938,2286 Z" id="Text" fill="#FFFFFF"></path>
+	<header>
+		<svg class="logo" height="70" viewBox="0 0 4762 1649" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g class="sign">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M92 368H708C968.126 368 1179 578.874 1179 839C1179 1099.13 968.126 1310 708 1310V1309H427V1310H372V1309V1254V750V695H427H540H593H595V1070H708C835.578 1070 939 966.578 939 839C939 711.422 835.578 608 708 608H260V1524.86C282.421 1535.11 298 1557.73 298 1584C298 1619.9 268.898 1649 233 1649C197.101 1649 168 1619.9 168 1584C168 1558.13 183.117 1535.78 205 1525.32V608V553H260H708C865.953 553 994 681.047 994 839C994 996.953 865.953 1125 708 1125H595H540V1070V750H427V1254H708V1255C937.75 1255 1124 1068.75 1124 839C1124 609.25 937.75 423 708 423H92V1524.86C114.421 1535.11 130 1557.73 130 1584C130 1619.9 100.899 1649 65 1649C29.1015 1649 0 1619.9 0 1584C0 1558.13 15.1168 1535.78 37 1525.32V423V368H92ZM115 1584C115 1611.61 92.6142 1634 65 1634C37.3858 1634 15 1611.61 15 1584C15 1556.39 37.3858 1534 65 1534C92.6142 1534 115 1556.39 115 1584ZM283 1584C283 1611.61 260.614 1634 233 1634C205.386 1634 183 1611.61 183 1584C183 1556.39 205.386 1534 233 1534C260.614 1534 283 1556.39 283 1584Z" fill="url(#paint0_linear)"/>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M93 130C118.873 130 141.216 114.883 151.677 93H708C1120 93 1454 426.996 1454 839C1454 1251 1120 1585 708 1585H427V1455H708C1048.21 1455 1324 1179.21 1324 839C1324 498.793 1048.21 223 708 223H153.018C143.223 199.51 120.04 183 93 183C57.1015 183 28 212.101 28 248C28 283.898 57.1015 313 93 313C118.077 313 139.838 298.799 150.678 278H708C1017.83 278 1269 529.168 1269 839C1269 1148.83 1017.83 1400 708 1400H372V1640H708C1150.38 1640 1509 1281.38 1509 839C1509 396.62 1150.38 38 708 38H152.144C141.892 15.5787 119.265 0 93 0C57.1015 0 28 29.1015 28 65C28 100.899 57.1015 130 93 130ZM143 65C143 92.6142 120.614 115 93 115C65.3858 115 43 92.6142 43 65C43 37.3858 65.3858 15 93 15C120.614 15 143 37.3858 143 65ZM143 248C143 275.614 120.614 298 93 298C65.3858 298 43 275.614 43 248C43 220.386 65.3858 198 93 198C120.614 198 143 220.386 143 248Z" fill="url(#paint1_linear)"/>
 			</g>
-		</g>
-	</svg>
+			<g class="text">
+				<path d="M2101.09 864.439C2101.09 899.921 2094.09 930.927 2080.09 957.457C2066.26 983.824 2046.56 1004.01 2021.01 1018C1995.62 1032 1966.49 1039 1933.61 1039H1794.45V695.006H1918.96C1976.9 695.006 2021.74 709.654 2053.48 738.951C2085.22 768.085 2101.09 809.915 2101.09 864.439ZM2028.58 864.439C2028.58 827.493 2018.98 799.335 1999.77 779.967C1980.56 760.436 1953.14 750.67 1917.49 750.67H1866.47V983.336H1927.5C1958.43 983.336 1983.01 972.675 2001.23 951.354C2019.46 930.032 2028.58 901.061 2028.58 864.439Z"/>
+				<path d="M2398.94 1039L2368.42 951.109H2237.32L2206.8 1039H2134.78L2260.27 695.006H2345.23L2470.23 1039H2398.94ZM2302.75 747.984L2301.28 753.355C2299.66 759.215 2297.7 765.888 2295.42 773.375C2293.15 780.862 2279.15 822.04 2253.43 896.91H2352.31L2318.37 798.033L2307.88 764.83L2302.75 747.984Z"/>
+				<path d="M2635.27 750.67V1039H2563.25V750.67H2452.16V695.006H2746.6V750.67H2635.27Z"/>
+				<path d="M2991.71 1039L2961.2 951.109H2830.09L2799.57 1039H2727.55L2853.04 695.006H2938L3063 1039H2991.71ZM2895.52 747.984L2894.06 753.355C2892.43 759.215 2890.48 765.888 2888.2 773.375C2885.92 780.862 2871.92 822.04 2846.21 896.91H2945.08L2911.15 798.033L2900.65 764.83L2895.52 747.984Z"/>
+				<path d="M3513.44 803.893C3513.44 826.028 3508.4 845.803 3498.3 863.219C3488.21 880.634 3473.73 894.143 3454.85 903.746C3436.13 913.186 3413.83 917.906 3387.95 917.906H3302.5V1039H3230.48V695.006H3385.02C3426.2 695.006 3457.86 704.527 3479.99 723.57C3502.29 742.451 3513.44 769.225 3513.44 803.893ZM3440.93 805.113C3440.93 768.98 3419.61 750.914 3376.97 750.914H3302.5V862.486H3378.92C3398.78 862.486 3414.08 857.604 3424.82 847.838C3435.56 837.91 3440.93 823.668 3440.93 805.113Z"/>
+				<path d="M3800.31 1039L3720.47 908.385H3636V1039H3563.98V695.006H3735.85C3776.87 695.006 3808.53 703.876 3830.82 721.617C3853.12 739.195 3864.27 764.505 3864.27 797.545C3864.27 821.633 3857.44 842.467 3843.76 860.045C3830.09 877.46 3811.62 888.935 3788.34 894.469L3881.36 1039H3800.31ZM3791.76 800.475C3791.76 767.434 3770.6 750.914 3728.29 750.914H3636V852.477H3730.24C3750.42 852.477 3765.72 847.919 3776.14 838.805C3786.55 829.69 3791.76 816.913 3791.76 800.475Z"/>
+				<path d="M3925.31 1039V695.006H3997.33V1039H3925.31Z"/>
+				<path d="M4350.11 1039V830.504C4350.11 825.784 4350.11 821.064 4350.11 816.344C4350.27 811.624 4351.09 791.36 4352.55 755.553C4341 799.335 4332.45 829.853 4326.92 847.105L4264.91 1039H4213.64L4151.62 847.105L4125.5 755.553C4127.46 793.313 4128.43 818.297 4128.43 830.504V1039H4064.47V695.006H4160.9L4222.43 887.389L4227.8 905.943L4239.52 952.086L4254.9 896.91L4318.13 695.006H4414.08V1039H4350.11Z"/>
+				<path d="M4480.97 1039V695.006H4751.48V750.67H4552.99V837.096H4736.59V892.76H4552.99V983.336H4761.49V1039H4480.97Z"/>
+			</g>
+			<defs>
+				<linearGradient id="paint0_linear" x1="0" y1="368" x2="0" y2="1649" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#11F8FF"/>
+					<stop offset="1" stop-color="#0D80F4"/>
+				</linearGradient>
+				<linearGradient id="paint1_linear" x1="28" y1="0" x2="28" y2="1640" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#98ED00"/>
+					<stop offset="1" stop-color="#049909"/>
+				</linearGradient>
+			</defs>
+		</svg>
+	</header>
 
-<script>
-	(function() {
-		var $rows = document.querySelectorAll('.bg .row');
-		var speed = [];
-		for (var i = 0, l = $rows.length; i < l; i++ ) {
-			speed.push(Math.random());
-		}
+	<main>
+		<section id="about">
+			<h2>О компании</h2>
+			<p>Data Prime&nbsp;&mdash; это распределенная по&nbsp;России команда профессионалов в&nbsp;своих областях. Разработчики, аналитики, дизайнеры и&nbsp;менеджеры с&nbsp;успешным опытом работы в&nbsp;различных сферах и&nbsp;отраслях.</p>
+			<p>Мы&nbsp;фокусируемся на&nbsp;решении бизнес-задач через изменение процессов и&nbsp;автоматизацию. Любое изменение, любая задача&nbsp;&mdash; это понятные метрики и&nbsp;KPI для бизнеса, которые должны вырасти по&nbsp;результатам проекта.</p>
+			<p>Каждый проект для наших сотрудников&nbsp;&mdash; это не&nbsp;рутина, а&nbsp;возможность реализовать эффективное решение на&nbsp;стыке технологий и&nbsp;отраслевого опыта. Это делает работу увлекательной, а&nbsp;результаты ощутимыми.</p>
+		</section>
 
 
-		function updateBgPosition(pageX, pageY) {
-			var w = document.body.clientWidth,
-				dx = pageX - w / 2;
+		<section id="technologies">
+			<h2>Технологии</h2>
+			<p>Работаем на&nbsp;принятом в&nbsp;организации стеке, либо подбираем наиболее эффективный под задачу:</p>
+			<ul>
+				<li><strong>Организация работы:</strong> Agile, Git, Docker, Kubernetes</li>
+				<li><strong>Серверная разработка:</strong> Python, Java, NodeJS, PostgreSQL, MongoDb</li>
+				<li><strong>Клиентская разработка:</strong> HTML5, Vue, Angular, React</li>
+				<li><strong>Мобильная разработка:</strong> Objective&nbsp;C & Swift, Java, WebView+JS</li>
+				<li><strong>Корпоративные сервисы:</strong> Informatica, SAP, Exasol, Tableau, Qlick&nbsp;view</li>
+			</ul>
+		</section>
 
-			[].forEach.call($rows, function($row, i){
-				// console.log(speed[i] * (dx / w) * 100 + '%', $row);
-				$row.style.backgroundPosition = speed[i] * (pageX / w) * 100 + '% 50%';
-				console.log($row.style);
+		<section id="expertise">
+			<h2>Экспертиза</h2>
+			<p>Умеем и развиваем:</p>
+			<ul>
+				<li>Аналитические панели для руководителей</li>
+				<li>Разметка данных и машинное обучение</li>
+				<li>Корпоративные хранилища данных</li>
+				<li>Мобильные решения для специалистов</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer>
+		<p>© Data Prime — 2019</p>
+		<ul>
+			<li>Позвонить: <a href="tel:">+7&nbsp;(499)&nbsp;123-45-67</a></li>
+			<li>Написать: <a href="#" style="white-space: nowrap;">hello@data-prime.ru</a></li>
+	</footer>
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function() {
+				try {
+					w.yaCounter47468230 = new Ya.Metrika2({
+						id:47468230,
+						clickmap:true,
+						trackLinks:true,
+						accurateTrackBounce:true
+					});
+				} catch(e) { }
 			});
-			
-		}
 
-		document.onmousemove = handleMouseMove;
-		function handleMouseMove(event) {
-			var dot, eventDoc, doc, body, pageX, pageY;
+			var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () { n.parentNode.insertBefore(s, n); };
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/tag.js";
 
-			event = event || window.event; // IE-ism
-
-			// (This is to support old IE)
-			if (event.pageX == null && event.clientX != null) {
-				eventDoc = (event.target && event.target.ownerDocument) || document;
-				doc = eventDoc.documentElement;
-				body = eventDoc.body;
-
-				event.pageX = event.clientX +
-				  (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
-				  (doc && doc.clientLeft || body && body.clientLeft || 0);
-				event.pageY = event.clientY +
-				  (doc && doc.scrollTop  || body && body.scrollTop  || 0) -
-				  (doc && doc.clientTop  || body && body.clientTop  || 0 );
-			}
-
-			updateBgPosition(event.pageX, event.pageY);
-		}
-
-		window.addEventListener("deviceorientation", handleOrientation, true);
-		function handleOrientation(event) {
-			var absolute = event.absolute;
-			var alpha    = event.alpha;
-			var beta     = event.beta;
-			var gamma    = event.gamma;
-
-			// Do stuff with the new orientation data
-			updateBgPosition(event.beta * 10, event.gamma);
-		}
-	})();
-</script>
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter47468230 = new Ya.Metrika2({
-                    id:47468230,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/tag.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks2");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/47468230" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else { f(); }
+		})(document, window, "yandex_metrika_callbacks2");
+	</script>
 
 </body>
 </html>
